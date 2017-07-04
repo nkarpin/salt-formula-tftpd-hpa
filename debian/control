@@ -2,7 +2,12 @@ Source: salt-formula-tftpd-hpa
 Maintainer: Jan Kaufman <jan.kaufman@tcpcloud.eu>
 Section: admin
 Priority: optional
-Build-Depends: debhelper (>= 9), salt-master, python, python-yaml, python-virtualenv
+Build-Depends: debhelper (>= 9),
+               openstack-pkg-tools,
+Build-Depends-Indep: python-all,
+                     python-yaml,
+                     python-virtualenv,
+                     salt-master,
 Standards-Version: 3.9.6
 Homepage: http://www.tcpcloud.eu
 Vcs-Browser: https://github.com/tcpcloud/salt-formula-tftpd-hpa
